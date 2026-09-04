@@ -1,0 +1,328 @@
+CSUBST start: 2026-03-26 20:47:41.019147+00:00
+csubst analyze start: 2026-03-26 20:47:41.025578+00:00
+OS: Linux-5.15.0-91-generic-x86_64-with-glibc2.35
+Python version: 3.9.21 (main, Dec 11 2024, 16:24:11)  [GCC 11.2.0]
+CSUBST version: 1.4.9
+CSUBST command: /home/yue/miniconda3/envs/py39/bin/csubst analyze --alignment_file /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa --rooted_tree_file /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_tree.nwk --foreground /mnt/data0/yue/2026-03-11-protein-convergence/taxonomy/foreground_multi_traits2_urceolata_corrected.tsv --fg_format 2 --fg_exclude_wg no --fg_stem_only no --cutoff_stat OCNany2spe,2.0|omegaCany2spe,5.0 --threads 1 --max_arity 10 --exhaustive_until 2 --iqtree_exe /home/yue/miniconda3/envs/py39/bin/iqtree --iqtree_redo yes --cbs no --cs no --s no
+CSUBST working directory: /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s
+CSUBST bug report: https://github.com/kfuku52/csubst/issues
+Reading and parsing input files.
+Using internal node names and branch lengths in --iqtree_treefile and the root position in --rooted_tree_file.
+Intermediate file is missing: /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa.iqtree
+Intermediate file is missing: /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa.log
+Intermediate file is missing: /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa.rate
+Intermediate file is missing: /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa.state
+Intermediate file is missing: /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa.treefile
+Starting IQ-TREE to estimate parameters and ancestral states.
+IQ-TREE's version: 2.4.0, PATH: /home/yue/miniconda3/envs/py39/bin/iqtree
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb 12 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    brain (AVX2, FMA3, 2015 GB RAM)
+Command: /home/yue/miniconda3/envs/py39/bin/iqtree -s /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa -te tmp.csubst.nwk -m ECMK07+F+R4 --seqtype CODON1 --threads-max 1 -T AUTO --ancestral --rate --redo
+Seed:    825802 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Mar 26 20:47:41 2026
+Kernel:  AVX+FMA - auto-detect threads (128 CPU cores detected)
+
+Reading alignment file /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa ... Fasta format detected
+Reading fasta file: done in 0.00186628 secs using 21% CPU
+Alignment most likely contains DNA/RNA sequences
+Converting to codon sequences with genetic code 1 ...
+Alignment has 66 sequences with 582 columns, 534 distinct patterns
+290 parsimony-informative, 153 singleton sites, 139 constant sites
+                                                               Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 8.17776e-05 secs
+   1  DE115|Cluster-35880.1__TRINITY_DN11633_c0_g1_i6.p1               0.52%    passed    100.00%
+   2  JJ86|Cluster-52392.0__TRINITY_DN10928_c0_g1_i3.p1                0.17%    passed    100.00%
+   3  SRR3407086|Cluster-35023.0__TRINITY_DN2216_c1_g1_i1.p1          14.43%    passed    100.00%
+   4  DE561|Cluster-39976.0__TRINITY_DN7355_c0_g1_i5.p1                0.17%    passed    100.00%
+   5  SRR3424066|Cluster-24724.0__TRINITY_DN7800_c0_g1_i2.p1           0.17%    passed    100.00%
+   6  DE127|Cluster-39662.1__TRINITY_DN6128_c0_g1_i4.p1                0.17%    passed    100.00%
+   7  DE554|Cluster-15226.0__TRINITY_DN61989_c0_g1_i3.p1               0.17%    passed    100.00%
+   8  DE666|Cluster-43266.0__TRINITY_DN6587_c0_g1_i1.p1                0.17%    passed    100.00%
+   9  DE546_urceolata_l|Cluster-31311.0__TRINITY_DN7566_c0_g1_i4.p1    0.17%    passed    100.00%
+  10  DE162|Cluster-48241.0__TRINITY_DN10771_c0_g1_i2.p1               0.17%    passed    100.00%
+  11  DE528|Cluster-7570.0__TRINITY_DN7512_c0_g1_i1.p1                 0.17%    passed    100.00%
+  12  DE507|Cluster-16306.0__TRINITY_DN10034_c0_g1_i2.p1               0.17%    passed    100.00%
+  13  DE704-purple|Cluster-7198.0__TRINITY_DN8494_c0_g1_i1.p1         27.84%    passed     99.90%
+  14  DE704-white|Cluster-43346.0__TRINITY_DN9800_c0_g1_i3.p1          0.17%    passed    100.00%
+  15  DE575|Cluster-17373.0__TRINITY_DN8209_c0_g1_i1.p1                0.17%    passed    100.00%
+  16  DE765|Cluster-39707.0__TRINITY_DN9445_c0_g1_i6.p1                0.17%    passed    100.00%
+  17  DE680|Cluster-14746.0__TRINITY_DN13096_c0_g1_i3.p1               0.69%    passed    100.00%
+  18  DE623|Cluster-44007.1__TRINITY_DN10189_c0_g1_i2.p1               0.34%    passed    100.00%
+  19  JJ125|Cluster-33058.0__TRINITY_DN51058_c0_g1_i1.p1               0.17%    passed    100.00%
+  20  DE151|Cluster-27237.0__TRINITY_DN11157_c0_g1_i1.p1               0.17%    passed    100.00%
+  21  JJ130|Cluster-7404.0__TRINITY_DN15463_c0_g1_i1.p1                0.17%    passed    100.00%
+  22  DE173|Cluster-24351.0__TRINITY_DN10460_c0_g1_i1.p1               0.17%    passed    100.00%
+  23  JJ109|Cluster-16039.0__TRINITY_DN2306_c0_g1_i1.p1                0.17%    passed    100.00%
+  24  DE189|Cluster-28640.1__TRINITY_DN5749_c0_g1_i3.p1                0.17%    passed    100.00%
+  25  JJ89|Cluster-8797.0__TRINITY_DN3801_c0_g1_i5.p1                  0.17%    passed    100.00%
+  26  DE737|Cluster-39313.0__TRINITY_DN2645_c0_g1_i2.p1               41.92%    passed     99.24%
+  27  DE164|Cluster-54439.0__TRINITY_DN1030_c0_g4_i1.p1                0.17%    passed    100.00%
+  28  DE476|Cluster-436.0__TRINITY_DN34533_c0_g2_i1.p1                 0.17%    passed    100.00%
+  29  DE531|Cluster-5383.0__TRINITY_DN2618_c0_g1_i1.p1                 0.17%    passed    100.00%
+  30  DE672|Cluster-41647.0__TRINITY_DN12757_c0_g1_i1.p1              46.22%    passed     93.66%
+  31  DE696-dots|Cluster-26055.0__TRINITY_DN2538_c0_g1_i1.p1           0.17%    passed    100.00%
+  32  DE696-nodots|Cluster-40008.0__TRINITY_DN7660_c0_g1_i1.p1         0.17%    passed    100.00%
+  33  JJ36|Cluster-45266.0__TRINITY_DN3482_c1_g1_i1.p1                 0.17%    passed    100.00%
+  34  DE643|Cluster-47504.0__TRINITY_DN10488_c0_g1_i1.p1               0.17%    passed    100.00%
+  35  DE509|Cluster-31164.0__TRINITY_DN3973_c0_g1_i1.p1                0.17%    passed    100.00%
+  36  DE736|Cluster-21629.0__TRINITY_DN18126_c0_g1_i1.p1               0.17%    passed    100.00%
+  37  DE764|Cluster-26483.0__TRINITY_DN7712_c0_g1_i1.p1                0.17%    passed    100.00%
+  38  DE549|Cluster-41643.0__TRINITY_DN21457_c1_g1_i1.p1               0.17%    passed    100.00%
+  39  DE550|Cluster-50537.0__TRINITY_DN9225_c0_g1_i2.p1                0.17%    passed    100.00%
+  40  DE88|Cluster-8327.0__TRINITY_DN11106_c0_g1_i1.p1                 0.17%    passed    100.00%
+  41  SRR3407096|Cluster-3371.0__TRINITY_DN2876_c0_g2_i1.p1            0.69%    passed    100.00%
+  42  DE523|Cluster-13354.0__TRINITY_DN6916_c0_g2_i1.p1                0.17%    passed    100.00%
+  43  DE536|Cluster-40204.0__TRINITY_DN5849_c0_g1_i1.p1                0.17%    passed    100.00%
+  44  DE69|Cluster-2208.49__TRINITY_DN8401_c0_g2_i6.p1                 0.17%    passed    100.00%
+  45  SRR3407095|Cluster-9914.0__TRINITY_DN12993_c0_g1_i1.p1           0.17%    passed    100.00%
+  46  DE519|Cluster-63283.0__TRINITY_DN8851_c0_g1_i4.p1                0.17%    passed    100.00%
+  47  DE741|Cluster-22434.0__TRINITY_DN9783_c0_g1_i1.p1                0.17%    passed    100.00%
+  48  DE671|Cluster-44487.0__TRINITY_DN7873_c0_g1_i1.p1                0.17%    passed    100.00%
+  49  DRR082660|Cluster-28208.0__TRINITY_DN16443_c0_g1_i1.p1           0.17%    passed    100.00%
+  50  JJ15|Cluster-69023.1__TRINITY_DN6485_c0_g1_i6.p1                 0.17%    passed    100.00%
+  51  DE560|Cluster-44917.1__TRINITY_DN1425_c0_g1_i3.p1                0.17%    passed    100.00%
+  52  JJ85|Cluster-16548.0__TRINITY_DN14063_c0_g1_i2.p1                0.17%    passed    100.00%
+  53  SRR3407088|Cluster-22345.19__TRINITY_DN5901_c1_g2_i4.p1          2.41%    passed    100.00%
+  54  DE503|Cluster-36377.2__TRINITY_DN8578_c0_g2_i3.p1                0.17%    passed    100.00%
+  55  DE505|Cluster-49464.17__TRINITY_DN666_c0_g1_i7.p1                0.17%    passed    100.00%
+  56  SRR3407087|Cluster-33483.0__TRINITY_DN5423_c0_g2_i3.p1           0.17%    passed    100.00%
+  57  SRR3407094|Cluster-39197.3__TRINITY_DN683_c0_g1_i15.p1           0.00%    passed    100.00%
+  58  SRR3407092|Cluster-16782.0__TRINITY_DN9069_c1_g2_i3.p1           0.17%    passed    100.00%
+  59  SRR3407093|Cluster-38906.0__TRINITY_DN22988_c0_g1_i10.p1         0.17%    passed    100.00%
+  60  DE152|Cluster-40553.0__TRINITY_DN8125_c0_g2_i1.p1                0.17%    passed    100.00%
+  61  JJ99|Cluster-47620.0__TRINITY_DN4985_c2_g1_i1.p1                 0.17%    passed    100.00%
+  62  DE229|Cluster-8069.0__TRINITY_DN14873_c1_g1_i12.p1               0.17%    passed    100.00%
+  63  JJ23|Cluster-31825.0__TRINITY_DN5495_c0_g1_i1.p1                 2.75%    passed    100.00%
+  64  DE566|Cluster-59023.0__TRINITY_DN24687_c0_g1_i5.p1               0.17%    passed    100.00%
+  65  DE126|Cluster-19925.0__TRINITY_DN8186_c0_g1_i1.p1                0.17%    passed    100.00%
+  66  SRR5150740|Cluster-45183.0__TRINITY_DN51832_c0_g1_i1.p1          4.64%    passed     99.95%
+****  TOTAL                                                            2.30%  0 sequences failed composition chi2 test (p-value<5%; df=60)
+Reading input tree file tmp.csubst.nwk ... rooted tree
+
+NOTE: 74 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 1 CPU cores
+2 trees examined
+Threads: 1 / Time: 3.639 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -16274
+BEST NUMBER OF THREADS: 1
+
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -17264.130
+2. Current log-likelihood: -11705.500
+3. Current log-likelihood: -11688.495
+4. Current log-likelihood: -11688.117
+5. Current log-likelihood: -11688.087
+6. Current log-likelihood: -11687.895
+7. Current log-likelihood: -11687.870
+8. Current log-likelihood: -11687.846
+9. Current log-likelihood: -11687.822
+10. Current log-likelihood: -11687.799
+11. Current log-likelihood: -11687.776
+12. Current log-likelihood: -11687.754
+13. Current log-likelihood: -11687.733
+14. Current log-likelihood: -11687.712
+15. Current log-likelihood: -11687.692
+16. Current log-likelihood: -11687.673
+17. Current log-likelihood: -11687.655
+18. Current log-likelihood: -11687.637
+19. Current log-likelihood: -11687.620
+20. Current log-likelihood: -11687.604
+21. Current log-likelihood: -11687.588
+22. Current log-likelihood: -11687.573
+23. Current log-likelihood: -11687.559
+24. Current log-likelihood: -11687.545
+25. Current log-likelihood: -11687.533
+26. Current log-likelihood: -11687.521
+27. Current log-likelihood: -11687.510
+28. Current log-likelihood: -11687.499
+Optimal log-likelihood: -11687.489
+Nonsynonymous/synonymous ratio (omega): 1.000
+Transition/transversion ratio (kappa): 1.000
+Site proportion and rates:  (0.446,0.312) (0.334,1.087) (0.217,2.205) (0.003,6.540)
+Parameters optimization took 28 rounds (314.829 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -11687.489
+Ancestral state probabilities printed to /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa.state
+Empirical proportions for each category: 0.476 0.342 0.179 0.003
+Site rates printed to /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa.rate
+Total tree length: 2.658
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 320.083 sec (0h:5m:20s)
+Total wall-clock time used: 320.732 sec (0h:5m:20s)
+
+Analysis results written to: 
+  IQ-TREE report:                /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa.iqtree
+  Maximum-likelihood tree:       /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa.treefile
+  Site-specific rates:           /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa.rate
+  Ancestral state:               /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa.state
+  Screen log file:               /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa.log
+
+Date and Time: Thu Mar 26 20:53:02 2026
+Total branch length of --rooted_tree_file: 107.0000
+Total branch length of --iqtree_treefile: 2.6580
+
+Reading the state file: /mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/csubst_input_alignment.fa.state
+
+Instantaneous substitution rate matrix will be generated using the base model: ECMK07+F
+Transition matrix will be generated using the model in the ancestral state reconstruction: ECMK07+F+R4
+Applying estimated codon frequencies to obtain the instantaneous rate matrix.
+Writing sequence alignment: csubst_alignment_codon.fa
+Writing sequence alignment: csubst_alignment_aa.fa
+Trait names in --foreground file: beak, beak2, tube, tube2, fork, pink, yellow, red, red2, purple2, yellow2, white, red3, beakless
+Ancestral states were not estimated on the root node. Excluding sub-root nodes from the analysis.
+DISPLAY is not available. Plotting is skipped.
+Generating memory map: dtype=float64, axis=(108, 582, 1, 20, 20), path=/mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/tmp.csubst.sub_tensor.N.mmap
+Generating memory map: dtype=float64, axis=(108, 582, 20, 6, 6), path=/mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/tmp.csubst.sub_tensor.S.mmap
+Branch lengths of the IQ-TREE output are rescaled to match observed-codon-substitutions/codon-site, rather than nucleotide-substitutions/codon-site.
+Total branch length before rescaling: 2.658 nucleotide substitutions / codon site
+Total S+N branch length after rescaling: 2.304 codon substitutions / codon site
+Total S branch length after rescaling: 1.291 codon substitutions / codon site
+Total N branch length after rescaling: 1.013 codon substitutions / codon site
+Synonymous substitutions / tree = 750.0
+Nonsynonymous substitutions / tree = 588.6
+Synonymous substitutions / branch = 7.0
+Nonsynonymous substitutions / branch = 5.5
+Synonymous substitutions / site = 1.3
+Nonsynonymous substitutions / site = 1.0
+Elapsed time: 324.0 sec
+
+Generating s table
+Time elapsed for merging tables: 0 sec
+Memory consumption of s table: 0.0 Mbytes (dtype=float64)
+Elapsed time: 0.0 sec
+
+Generating b table
+Time elapsed for merging tables: 0 sec
+Number of S_sub patterns among 108 branches=106, min=0.0, max=30.6
+Number of N_sub patterns among 108 branches=106, min=0.0, max=26.3
+Memory consumption of b table: 0.0 Mbytes (dtype=object)
+Elapsed time: 0.0 sec
+
+Arity (K) = 2: Generating cb table
+Arity (K) = 2: Exhaustive search with all independent branch combinations
+Number of all branches: 107
+Number of all branch combinations before independency check: 5,671
+Number of non-independent branch combinations to be removed: 928
+Number of non-independent foreground branch combinations to be non-foreground-marked for beak: 0 / 4,743
+Number of non-independent foreground branch combinations to be non-foreground-marked for beak2: 0 / 4,743
+Number of non-independent foreground branch combinations to be non-foreground-marked for tube: 0 / 4,743
+Number of non-independent foreground branch combinations to be non-foreground-marked for tube2: 0 / 4,743
+Number of non-independent foreground branch combinations to be non-foreground-marked for fork: 0 / 4,743
+Number of non-independent foreground branch combinations to be non-foreground-marked for pink: 0 / 4,743
+Number of non-independent foreground branch combinations to be non-foreground-marked for yellow: 0 / 4,743
+Number of non-independent foreground branch combinations to be non-foreground-marked for red: 0 / 4,743
+Number of non-independent foreground branch combinations to be non-foreground-marked for red2: 0 / 4,743
+Number of non-independent foreground branch combinations to be non-foreground-marked for purple2: 0 / 4,743
+Number of non-independent foreground branch combinations to be non-foreground-marked for yellow2: 0 / 4,743
+Number of non-independent foreground branch combinations to be non-foreground-marked for white: 0 / 4,743
+Number of non-independent foreground branch combinations to be non-foreground-marked for red3: 0 / 4,743
+Number of non-independent foreground branch combinations to be non-foreground-marked for beakless: 0 / 4,743
+Time elapsed for generating branch combinations: 0 sec
+Number of independent branch combinations to be analyzed: 4,743
+Preparing OCS table with 1 process(es).
+cb: 0th in the id range 0-4,743: 0 sec
+Preparing OCN table with 1 process(es).
+cb: 0th in the id range 0-4,743: 0 sec
+Time elapsed for merging tables: 0 sec
+Generating memory map: dtype=float64, axis=(108, 582, 1, 20, 20), path=/mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/tmp.csubst.sub_tensor.EN.mmap
+Number of total empirically expected nonsynonymous substitutions in the tree: 811.13
+Preparing the ECN table with 1 process(es).
+cb: 0th in the id range 0-4,743: 0 sec
+Time elapsed for merging tables: 0 sec
+Generating memory map: dtype=float64, axis=(108, 582, 20, 6, 6), path=/mnt/data0/yue/2026-03-11-protein-convergence/results/OG_10400/csubst_w_s/tmp.csubst.sub_tensor.ES.mmap
+Number of total empirically expected synonymous substitutions in the tree: 747.32
+Preparing the ECS table with 1 process(es).
+cb: 0th in the id range 0-4,743: 0 sec
+Time elapsed for merging tables: 0 sec
+Arity = 2, cb: median omegaCany2any (non-corrected for dNc vs dSc distribution ranges): 0.001
+Arity = 2, cb: median omegaCany2spe (non-corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCany2dif (non-corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCdif2any (non-corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCdif2spe (non-corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCdif2dif (non-corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCspe2any (non-corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCspe2spe (non-corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCspe2dif (non-corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCany2any (217/4,743 branch combinations were corrected for dNc vs dSc distribution ranges): 0.002
+Arity = 2, cb: median omegaCany2spe (811/4,743 branch combinations were corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCany2dif (485/4,743 branch combinations were corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCdif2any (547/4,743 branch combinations were corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCdif2spe (2,718/4,743 branch combinations were corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCdif2dif (563/4,743 branch combinations were corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCspe2any (499/4,743 branch combinations were corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCspe2spe (827/4,743 branch combinations were corrected for dNc vs dSc distribution ranges): 0.000
+Arity = 2, cb: median omegaCspe2dif (2,616/4,743 branch combinations were corrected for dNc vs dSc distribution ranges): 0.000
+Starting branch distance calculation. If it takes too long, disable this step by --branch_dist no
+Inter-branch distance: 0th in the id range 0-4,743: 0 sec
+Time elapsed for calculating inter-branch distances: 0 sec
+Time elapsed for the linear regression of C ~ D: 0 sec
+Arity (K) = 2: Foreground branch combinations with cutoff conditions OCNany2spe,2.0|omegaCany2spe,5.0 for beak = 50% (3/6, total examined = 4,743, enrichment factor = 1.0)
+Arity (K) = 2: Foreground branch combinations with cutoff conditions OCNany2spe,2.0|omegaCany2spe,5.0 for beak2 = 50% (3/6, total examined = 4,743, enrichment factor = 1.0)
+Arity (K) = 2: Foreground branch combinations with cutoff conditions OCNany2spe,2.0|omegaCany2spe,5.0 for tube = 17% (1/6, total examined = 4,743, enrichment factor = 1.6)
+Arity (K) = 2: Foreground branch combinations with cutoff conditions OCNany2spe,2.0|omegaCany2spe,5.0 for tube2 = 17% (1/6, total examined = 4,743, enrichment factor = 1.8)
+Arity (K) = 2: Foreground branch combinations with cutoff conditions OCNany2spe,2.0|omegaCany2spe,5.0 for fork = 0% (0/6, total examined = 4,743, enrichment factor = 0.0)
+Arity (K) = 2: Foreground branch combinations with cutoff conditions OCNany2spe,2.0|omegaCany2spe,5.0 for pink = 17% (1/6, total examined = 4,743, enrichment factor = 0.7)
+Arity (K) = 2: Foreground branch combinations with cutoff conditions OCNany2spe,2.0|omegaCany2spe,5.0 for yellow = 0% (0/6, total examined = 4,743, enrichment factor = 0.0)
+Arity (K) = 2: Foreground branch combinations with cutoff conditions OCNany2spe,2.0|omegaCany2spe,5.0 for red = 0% (0/6, total examined = 4,743, enrichment factor = 0.0)
+Arity (K) = 2: Foreground branch combinations with cutoff conditions OCNany2spe,2.0|omegaCany2spe,5.0 for red2 = 0% (0/6, total examined = 4,743, enrichment factor = 0.0)
+Arity (K) = 2: Foreground branch combinations with cutoff conditions OCNany2spe,2.0|omegaCany2spe,5.0 for purple2 = 0% (0/6, total examined = 4,743, enrichment factor = 0.0)
+Arity (K) = 2: Foreground branch combinations with cutoff conditions OCNany2spe,2.0|omegaCany2spe,5.0 for yellow2 = 0% (0/6, total examined = 4,743, enrichment factor = 0.0)
+Arity (K) = 2: Foreground branch combinations with cutoff conditions OCNany2spe,2.0|omegaCany2spe,5.0 for white = 0% (0/6, total examined = 4,743, enrichment factor = 0.0)
+Arity (K) = 2: Foreground branch combinations with cutoff conditions OCNany2spe,2.0|omegaCany2spe,5.0 for red3 = 0% (0/6, total examined = 4,743, enrichment factor = 0.0)
+Arity (K) = 2: Foreground branch combinations with cutoff conditions OCNany2spe,2.0|omegaCany2spe,5.0 for beakless = 0% (0/6, total examined = 4,743, enrichment factor = 0.0)
+Time elapsed for obtaining foreground branch numbers in the cb table: 24 sec
+Time elapsed for sorting cb table: 0 sec
+Memory consumption of cb table: 5.9 Mbytes (dtype=object)
+Total OCSany2any/ECSany2any = 975.8/794.7 (expectation = 81.4% of observation)
+Total OCSany2dif/ECSany2dif = 365.3/405.0 (expectation = 110.9% of observation)
+Total OCSany2spe/ECSany2spe = 610.5/389.6 (expectation = 63.8% of observation)
+Total OCSdif2any/ECSdif2any = 163.0/160.1 (expectation = 98.2% of observation)
+Total OCSdif2dif/ECSdif2dif = 161.7/153.5 (expectation = 94.9% of observation)
+Total OCSdif2spe/ECSdif2spe = 1.3/6.6 (expectation = 519.4% of observation)
+Total OCSspe2any/ECSspe2any = 812.8/634.6 (expectation = 78.1% of observation)
+Total OCSspe2dif/ECSspe2dif = 203.6/251.5 (expectation = 123.5% of observation)
+Total OCSspe2spe/ECSspe2spe = 609.2/383.1 (expectation = 62.9% of observation)
+Total OCNany2any/ECNany2any = 669.7/948.6 (expectation = 141.6% of observation)
+Total OCNany2dif/ECNany2dif = 376.0/830.4 (expectation = 220.9% of observation)
+Total OCNany2spe/ECNany2spe = 293.7/118.2 (expectation = 40.2% of observation)
+Total OCNdif2any/ECNdif2any = 102.0/118.0 (expectation = 115.7% of observation)
+Total OCNdif2dif/ECNdif2dif = 93.9/113.0 (expectation = 120.4% of observation)
+Total OCNdif2spe/ECNdif2spe = 8.1/5.0 (expectation = 62.1% of observation)
+Total OCNspe2any/ECNspe2any = 567.7/830.5 (expectation = 146.3% of observation)
+Total OCNspe2dif/ECNspe2dif = 282.1/717.4 (expectation = 254.3% of observation)
+Total OCNspe2spe/ECNspe2spe = 285.7/113.1 (expectation = 39.6% of observation)
+Elapsed time for arity = 2: 204.0 sec
+
+Arity (K) = 3: Generating cb table
+Arity (K) = 3: Heuristic search with 6 K-1 branch combinations that passed cutoff stats (OCNany2spe,2.0|omegaCany2spe,5.0)
+Number of all branches: 107
+Number of redundant branch combination unions for beak: 3
+Number of redundant branch combination unions for beak2: 3
+Number of all branch combinations before independency check: 0
+Number of non-independent branch combinations to be removed: 0
+Time elapsed for generating branch combinations: 0 sec
+Number of independent branch combinations to be analyzed: 0
+Writing csubst_cb_stats.tsv
+csubst analyze: Time elapsed: 531 sec
+csubst analyze end: 2026-03-26 20:56:32.326682+00:00
+
+CSUBST end: 2026-03-26 20:56:32.442713+00:00, Elapsed time = 531.0 sec
+
+-------
+There is no target branch combination for tube at K = 3.
+There is no target branch combination for tube2 at K = 3.
+There is no target branch combination for fork at K = 3.
+There is no target branch combination for pink at K = 3.
+There is no target branch combination for yellow at K = 3.
+There is no target branch combination for red at K = 3.
+There is no target branch combination for red2 at K = 3.
+There is no target branch combination for purple2 at K = 3.
+There is no target branch combination for yellow2 at K = 3.
+There is no target branch combination for white at K = 3.
+There is no target branch combination for red3 at K = 3.
+There is no target branch combination for beakless at K = 3.
