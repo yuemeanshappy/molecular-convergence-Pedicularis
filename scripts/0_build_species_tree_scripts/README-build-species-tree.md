@@ -18,7 +18,7 @@ Construct a species-level phylogenetic tree of *Pedicularis* using 83 RNA-seq da
 10. Root individual gene trees.`twig v.0.0.5`
 11. Infer final species trees using different gene tree datasets.`twig v.0.0.5`;`ASTRAL-Pro3 v1.22.3.6`
 
-## Reference data and data availability
+## Reference data
 
 Selected intermediate and final phylogenomic results are available in the associated GitHub repository, including:
 
